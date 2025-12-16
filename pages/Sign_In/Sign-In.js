@@ -16,5 +16,5 @@ document.getElementById('signinForm').addEventListener('submit', function(e) {
     // Placeholder for sign-in logic (e.g., API call)
     alert('Sign-in successful!');
     // Redirect to dashboard or main page
-    window.location.href = '/pages/Dashboard/Dashboard.html';
+    window.location.href = '/pages/Dashboard/dashboard.html';
 });
