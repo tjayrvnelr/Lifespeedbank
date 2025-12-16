@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - LifeSpeed Bank</title>
+    <link rel="stylesheet" href="Sign-Up.css">
+</head>
+<body>
+    <nav class="nav">
+        <header>
+            <h1>LifeSpeed Bank</h1>
+        </header>
+        <div>
+            <a href="/public/index.html">Home</a>
+            <a href="/public/pages/Sign_In/Sign-In.html">Sign In</a>
+        </div>
+    </nav>
+
+    <div class="form-container">
+        <div class="form-box">
+            <h2>Sign Up</h2>
+            <form id="signupForm">
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" name="fullName" required placeholder="Enter your full name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required placeholder="Create a password" minlength="8">
+                </div>
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required placeholder="Confirm your password">
+                </div>
+                <button type="submit" class="btn">Sign Up</button>
+            </form>
+            <div class="switch-link">
+                <p>Already have an account? <a href="/public/pages/Sign_In/Sign-In.html">Sign In</a></p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 LifeSpeed Bank. All rights reserved.</p>
+        <a href="#">Terms of Service</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Contact Us</a>
+    </footer>
+
+    <script src="Sign-Up.js"></script>
+</body>
+</html>

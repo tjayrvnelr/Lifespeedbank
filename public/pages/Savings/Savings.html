@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savings Account - LifeSpeed Bank</title>
+    <link rel="stylesheet" href="Savings.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">LifeSpeed Bank</div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+            <ul id="navMenu">
+                <li><a href="/public/pages/Dashboard/dashboard.html">Dashboard</a></li>   
+                <li><a href="/public/pages/Savings/Savings.html">Savings</a></li>
+                <li><a href="/public/pages/Digital_Banking/Digital-Banking.html">Digital Banking</a></li>
+                <li><a href="/public/pages/Credit_Card/Credit-Card.html">Credit Card</a></li>
+                <li><a href="/public/pages/Loans/Loans.html">Loans</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="page-header">
+            <h1>Savings Account</h1>
+            <p>Start saving today with our competitive interest rates and flexible options</p>
+        </div>
+
+        <div class="content-section">
+            <h2>Why Choose Our Savings Account?</h2>
+            <div class="features">
+                <div class="feature-item">
+                    <h3>High Interest Rates</h3>
+                    <p>Earn competitive interest on your savings with rates up to 4.5% APY.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>No Monthly Fees</h3>
+                    <p>Keep more of your money with zero monthly maintenance fees.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>FDIC Insured</h3>
+                    <p>Your deposits are protected up to $250,000 by FDIC insurance.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Easy Access</h3>
+                    <p>Access your funds anytime through our mobile app or online banking.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>Open Your Savings Account</h2>
+            <p style="text-align: center; margin-bottom: 2rem;">Fill out the form below to get started</p>
+            <form id="savingsForm">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email Address" required>
+                <input type="tel" placeholder="Phone Number" required>
+                <input type="number" placeholder="Initial Deposit ($)" min="0" required>
+                <select required>
+                    <option value="">Select Account Type</option>
+                    <option value="regular">Regular Savings (3.5% APY)</option>
+                    <option value="high-yield">High-Yield Savings (4.5% APY)</option>
+                </select>
+                <button type="submit" class="btn">Submit Application</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 LifeSpeed Bank. All rights reserved.</p>
+        <div>
+            <a href="#">Terms of Service</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Contact Us</a>
+        </div>
+    </footer>
+
+    <script src="Savings.js"></script>
+</body>
+</html>

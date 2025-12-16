@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - LifeSpeed Bank</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+<!-- Mobile Menu Toggle -->
+<button class="mobile-toggle" id="mobileToggle">☰</button>
+
+<!-- Sidebar -->
+<aside class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+        <h2>LifeSpeed Bank</h2>
+        <button class="toggle-btn" id="toggleBtn">☰</button>
+    </div>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="/public/pages/Dashboard/dashboard.html" class="active">
+                    <span class="icon">📊</span>
+                    <span class="link-text">Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="/public/pages/Savings/Savings.html">
+                    <span class="icon">💰</span>
+                    <span class="link-text">Savings Account</span>
+                </a>
+            </li>
+            <li>
+                <a href="/public/pages/Digital_Banking/Digital-Banking.html">
+                    <span class="icon">💻</span>
+                    <span class="link-text">Digital Banking</span>
+                </a>
+            </li>
+            <li>
+                <a href="/public/pages/Credit_Card/Credit-Card.html">
+                    <span class="icon">💳</span>
+                    <span class="link-text">Credit Card</span>
+                </a>
+            </li>
+            <li>
+                <a href="/public/pages/Loans/Loans.html">
+                    <span class="icon">🏦</span>
+                    <span class="link-text">Loans</span>
+                </a>
+            </li>
+        </ul>
+
+        <button class="sign-out-btn" id="signOutBtn">
+            <span class="icon">🚪</span>
+            <span class="link-text">Sign Out</span>
+        </button>
+    </nav>
+</aside>
+
+<!-- Main Content -->
+<main class="main-content" id="mainContent">
+    <div class="content-wrapper">
+        <div class="dashboard-header">
+            <h1>Welcome to LifeSpeed Bank</h1>
+            <p>Your trusted financial partner for life's journey</p>
+        </div>
+
+        <!-- WHO Section -->
+        <section class="section">
+            <h2>Who We Are</h2>
+            <div class="section-content">
+                <p>LifeSpeed Bank is a modern financial institution dedicated to empowering individuals and families to achieve their financial goals. With over 20 years of experience in the banking industry, we combine traditional banking values with innovative digital solutions.</p>
+                <p>We are a team of passionate financial experts committed to providing personalized service and building lasting relationships with our customers. Our focus is on understanding your unique needs and delivering tailored financial solutions that help you succeed.</p>
+                
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="number">20+</div>
+                        <div class="label">Years of Service</div>
+                    </div>
+                    <div class="stat-card" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                        <div class="number">500K+</div>
+                        <div class="label">Happy Customers</div>
+                    </div>
+                    <div class="stat-card" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                        <div class="number">$2B+</div>
+                        <div class="label">Assets Managed</div>
+                    </div>
+                    <div class="stat-card" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+                        <div class="number">99.9%</div>
+                        <div class="label">Uptime</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WHY Section -->
+        <section class="section">
+            <h2>Why Choose LifeSpeed Bank</h2>
+            <div class="section-content">
+                <p>At LifeSpeed Bank, we believe banking should be simple, secure, and accessible. We've built our services around what matters most to you – convenience, transparency, and trust.</p>
+                
+                <ul class="features-list">
+                    <li><strong>Competitive Rates:</strong> Get the best interest rates on savings accounts and the lowest rates on loans</li>
+                    <li><strong>24/7 Digital Access:</strong> Bank anytime, anywhere with our award-winning mobile app and online platform</li>
+                    <li><strong>No Hidden Fees:</strong> Transparent pricing with no surprise charges or monthly maintenance fees</li>
+                    <li><strong>FDIC Insured:</strong> Your deposits are protected up to $250,000 by federal insurance</li>
+                    <li><strong>Award-Winning Security:</strong> Bank-level encryption and multi-factor authentication protect your data</li>
+                    <li><strong>Personalized Service:</strong> Dedicated financial advisors available to help you reach your goals</li>
+                    <li><strong>Fast Approval:</strong> Quick loan and credit card approvals, often within 24 hours</li>
+                    <li><strong>Community Focused:</strong> We invest in local communities and support financial literacy programs</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- WHAT Section -->
+        <section class="section">
+            <h2>What We Offer</h2>
+            <div class="section-content">
+                <p>LifeSpeed Bank provides a comprehensive suite of banking products and services designed to meet all your financial needs throughout life's journey.</p>
+                
+                <div style="text-align: left; max-width: 700px; margin: 2rem auto;">
+                    <div style="margin-bottom: 2rem;">
+                        <h3 style="color: #007bff; margin-bottom: 0.5rem;">💰 Savings Accounts</h3>
+                        <p>High-yield savings accounts with competitive interest rates up to 4.5% APY. No monthly fees, easy access to your funds, and FDIC insured up to $250,000.</p>
+                    </div>
+
+                    <div style="margin-bottom: 2rem;">
+                        <h3 style="color: #007bff; margin-bottom: 0.5rem;">💻 Digital Banking</h3>
+                        <p>Complete online banking platform with money transfers, bill payments, mobile check deposit, and real-time account alerts. Access your accounts 24/7 from any device.</p>
+                    </div>
+
+                    <div style="margin-bottom: 2rem;">
+                        <h3 style="color: #007bff; margin-bottom: 0.5rem;">💳 Credit Cards</h3>
+                        <p>Choose from rewards cards, cashback cards, travel cards, and student cards. Earn points on every purchase, enjoy fraud protection, and build your credit score.</p>
+                    </div>
+
+                    <div style="margin-bottom: 2rem;">
+                        <h3 style="color: #007bff; margin-bottom: 0.5rem;">🏦 Personal & Home Loans</h3>
+                        <p>Competitive rates starting at 4.99% APR for auto loans, 6.99% for personal loans, and 5.75% for home mortgages. Flexible terms and fast approval process.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <h2>Ready to Get Started?</h2>
+            <p>Join over 500,000 satisfied customers and experience banking that puts you first</p>
+            <a href="/pages/Savings/Savings.html" class="btn btn-white">Open an Account Today</a>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2025 LifeSpeed Bank. All rights reserved.</p>
+        <div>
+            <a href="#">Terms of Service</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Contact Us</a>
+        </div>
+    </footer>
+</main>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
