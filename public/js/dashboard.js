@@ -18,7 +18,7 @@ mobileToggle.addEventListener('click', function() {
 document.getElementById('signOutBtn').addEventListener('click', function() {
     if (confirm('Are you sure you want to sign out?')) {
         alert('Signing out...');
-        window.location.href = '/public/index.html';
+        window.location.href = '/index.html';
     }
 });
 
