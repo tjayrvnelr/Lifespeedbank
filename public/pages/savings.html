@@ -1,81 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Savings Account - LifeSpeed Bank</title>
+    <title>Savings - LifeSpeed Bank</title>
     <link rel="stylesheet" href="/public/css/savings.css">
 </head>
+
 <body>
-    <header>
-        <nav>
-            <div class="logo">LifeSpeed Bank</div>
-            <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
-            <ul id="navMenu">
-                <li><a href="dashboard.html">Dashboard</a></li>   
-                <li><a href="savings.html">Savings</a></li>
-                <li><a href="digitalbank.html">Digital Banking</a></li>
-                <li><a href="creditcard.html">Credit Card</a></li>
-                <li><a href="loans.html">Loans</a></li>
-            </ul>
+    <header class="nav">
+        <h1>LifeSpeed Bank</h1>
+        <nav class="nav-links">
+            <a href="dashboard.html" class="pushable"><span class="shadow"></span><span class="edge"></span><span
+                    class="front">Dashboard</span></a>
+            <a href="savings.html" class="pushable"><span class="shadow"></span><span class="edge"></span><span
+                    class="front">Savings</span></a>
+            <a href="digitalbank.html" class="pushable"><span class="shadow"></span><span class="edge"></span><span
+                    class="front">Digital</span></a>
+            <a href="creditcard.html" class="pushable"><span class="shadow"></span><span class="edge"></span><span
+                    class="front">Credit</span></a>
+            <a href="loans.html" class="pushable"><span class="shadow"></span><span class="edge"></span><span
+                    class="front">Loans</span></a>
+                            <button class="pushable" id="signOutBtn">
+            <span class="shadow"></span>
+            <span class="edge"></span>
+            <span class="front">Sign Out</span>
+        </button>
         </nav>
     </header>
 
-    <div class="container">
-        <div class="page-header">
-            <h1>Savings Account</h1>
-            <p>Start saving today with our competitive interest rates and flexible options</p>
-        </div>
+    <section class="page-header">
+        <h1>Savings Account</h1>
+        <p>Competitive rates up to 4.5% APY with zero monthly fees.</p>
+    </section>
 
-        <div class="content-section">
-            <h2>Why Choose Our Savings Account?</h2>
-            <div class="features">
-                <div class="feature-item">
-                    <h3>High Interest Rates</h3>
-                    <p>Earn competitive interest on your savings with rates up to 4.5% APY.</p>
-                </div>
-                <div class="feature-item">
-                    <h3>No Monthly Fees</h3>
-                    <p>Keep more of your money with zero monthly maintenance fees.</p>
-                </div>
-                <div class="feature-item">
-                    <h3>FDIC Insured</h3>
-                    <p>Your deposits are protected up to $250,000 by FDIC insurance.</p>
-                </div>
-                <div class="feature-item">
-                    <h3>Easy Access</h3>
-                    <p>Access your funds anytime through our mobile app or online banking.</p>
-                </div>
+    <section class="white-section">
+        <h2>Why Save With Us?</h2>
+        <div class="features">
+            <div class="feature-item">
+                <h3>High Interest</h3>
+                <p>Earn up to 4.5% APY on your balance. Grow your wealth faster.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Zero Fees</h3>
+                <p>No monthly maintenance or hidden charges. Keep every cent.</p>
+            </div>
+            <div class="feature-item">
+                <h3>FDIC Insured</h3>
+                <p>Your money is safe. We protect your deposits up to $250,000.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Mobile Access</h3>
+                <p>Transfer funds and check balances instantly via our secure app.</p>
             </div>
         </div>
+    </section>
 
-        <div class="content-section">
-            <h2>Open Your Savings Account</h2>
-            <p style="text-align: center; margin-bottom: 2rem;">Fill out the form below to get started</p>
-            <form id="savingsForm">
-                <input type="text" placeholder="Full Name" required>
-                <input type="email" placeholder="Email Address" required>
-                <input type="tel" placeholder="Phone Number" required>
-                <input type="number" placeholder="Initial Deposit ($)" min="0" required>
-                <select required>
-                    <option value="">Select Account Type</option>
-                    <option value="regular">Regular Savings (3.5% APY)</option>
-                    <option value="high-yield">High-Yield Savings (4.5% APY)</option>
-                </select>
-                <button type="submit" class="btn">Submit Application</button>
-            </form>
-        </div>
-    </div>
+    <section class="gray-section">
+        <h2>Open Your Account</h2>
+        <p>Complete the application below for an instant account setup.</p>
+        <form id="savingsForm">
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <input type="number" placeholder="Initial Deposit ($)" min="0" required>
+            <select required>
+                <option value="">Select Account Type</option>
+                <option value="regular">Regular Savings (3.5% APY)</option>
+                <option value="high-yield">High-Yield Savings (4.5% APY)</option>
+            </select>
+            <button type="submit" class="pushable">
+                <span class="shadow"></span>
+                <span class="edge"></span>
+                <span class="front">Apply Now</span>
+            </button>
+        </form>
+    </section>
 
     <footer>
         <p>© 2025 LifeSpeed Bank. All rights reserved.</p>
-        <div>
-            <a href="#">Terms of Service</a>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Contact Us</a>
-        </div>
     </footer>
 
     <script src="/js/savings.js"></script>
+    <script src="/public/js/dashboard.js"></script>
 </body>
+
 </html>

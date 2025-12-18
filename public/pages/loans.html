@@ -1,192 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loans - LifeSpeed Bank</title>
     <link rel="stylesheet" href="/public/css/loans.css">
 </head>
+
 <body>
-<header>
-<nav>
-    <div class="logo">LifeSpeed Bank</div>
-    <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
-    <ul id="navMenu">
-        <li><a href="dashboard.html">Dashboard</a></li>
-        <li><a href="savings.html">Savings</a></li>
-        <li><a href="digitalbank.html">Digital Banking</a></li>
-        <li><a href="creditcard.html">Credit Card</a></li>
-        <li><a href="loans.html">Loans</a></li>
-    </ul>
-</nav>
-</header>
+    <header class="nav">
+        <h1>LifeSpeed Bank</h1>
+        <nav class="nav-links">
+            <a href="dashboard.html" class="pushable"><span class="shadow"></span><span class="edge"></span><span
+                    class="front">Dashboard</span></a>
+            <a href="savings.html" class="pushable"><span class="shadow"></span><span class="edge"></span><span
+                    class="front">Savings</span></a>
+            <a href="digitalbank.html" class="pushable"><span class="shadow"></span><span class="edge"></span><span
+                    class="front">Digital</span></a>
+            <a href="creditcard.html" class="pushable"><span class="shadow"></span><span class="edge"></span><span
+                    class="front">Credit</span></a>
+            <a href="loans.html" class="pushable"><span class="shadow"></span><span class="edge"></span><span
+                    class="front">Loans</span></a>
+                            <button class="pushable" id="signOutBtn">
+            <span class="shadow"></span>
+            <span class="edge"></span>
+            <span class="front">Sign Out</span>
+        </button>
+        </nav>
+    </header>
 
-<div class="container">
-<div class="page-header">
-    <h1>Personal & Home Loans</h1>
-    <p>Competitive rates, flexible terms, and quick approval to help you reach your goals</p>
-</div>
-
-<div class="content-section">
-    <h2>Our Loan Products</h2>
-    <div class="loan-types">
-        <div class="loan-type">
-            <h3>Personal Loan</h3>
-            <div class="rate">Starting at 6.99% APR</div>
-            <p>Perfect for debt consolidation, home improvements, or major purchases</p>
-            <ul>
-                <li>Loan amounts: $1,000 - $50,000</li>
-                <li>Terms: 12-60 months</li>
-                <li>No origination fees</li>
-                <li>Fast approval in 24 hours</li>
-                <li>Flexible payment options</li>
-                <li>No prepayment penalties</li>
-            </ul>
-        </div>
-        <div class="loan-type">
-            <h3>Home Loan (Mortgage)</h3>
-            <div class="rate">Starting at 5.75% APR</div>
-            <p>Make your dream home a reality with our competitive mortgage rates</p>
-            <ul>
-                <li>Loan amounts: up to $750,000</li>
-                <li>Terms: 15-30 years</li>
-                <li>Fixed and adjustable rates</li>
-                <li>First-time buyer programs</li>
-                <li>Low down payment options</li>
-                <li>Online application</li>
-            </ul>
-        </div>
-        <div class="loan-type">
-            <h3>Auto Loan</h3>
-            <div class="rate">Starting at 4.99% APR</div>
-            <p>Finance your new or used vehicle with our low auto loan rates</p>
-            <ul>
-                <li>Loan amounts: $5,000 - $100,000</li>
-                <li>Terms: 24-72 months</li>
-                <li>New and used vehicles</li>
-                <li>Refinancing available</li>
-                <li>Pre-approval in minutes</li>
-                <li>Flexible payment schedules</li>
-            </ul>
-        </div>
+    <div class="page-header">
+        <h1>Loan Products</h1>
+        <p>Flexible financing with quick approval.</p>
     </div>
-</div>
 
-<div class="content-section">
-    <h2>Loan Calculator</h2>
-    <div class="calculator-section">
-        <h3>Calculate Your Monthly Payment</h3>
-        <div class="calculator-inputs">
-            <div>
-                <label>Loan Amount ($)</label>
-                <input type="number" id="loanAmount" value="10000" min="1000">
+    <section class="content-section">
+        <div class="loan-grid">
+            <div class="loan-card">
+                <h3>Personal Loan</h3>
+                <div class="rate">From 6.99% APR</div>
+                <p>Amounts up to $50,000 with 24-hour approval.</p>
             </div>
-            <div>
-                <label>Interest Rate (%)</label>
-                <input type="number" id="interestRate" value="6.99" step="0.01" min="0">
-            </div>
-            <div>
-                <label>Loan Term (months)</label>
-                <input type="number" id="loanTerm" value="36" min="12">
+            <div class="loan-card">
+                <h3>Home Mortgage</h3>
+                <div class="rate">From 5.75% APR</div>
+                <p>Fixed and adjustable rates for your dream home.</p>
             </div>
         </div>
-        <button class="btn" onclick="calculateLoan()">Calculate</button>
-        <div class="calculator-result" id="result" style="display: none;">
-            <h4>Estimated Monthly Payment</h4>
-            <div class="amount" id="monthlyPayment">$0</div>
-            <p style="margin-top: 1rem;">Total Interest: <strong id="totalInterest">$0</strong></p>
-            <p>Total Amount: <strong id="totalAmount">$0</strong></p>
-        </div>
-    </div>
-</div>
+    </section>
 
-<div class="content-section">
-    <h2>Why Choose LifeSpeed Loans?</h2>
-    <div class="features-grid">
-        <div class="feature-item">
-            <h3>Competitive Rates</h3>
-            <p>Get some of the lowest interest rates in the industry</p>
+    <section class="content-section" style="background-color: #ffffff;">
+        <div class="calc-box">
+            <h2>Loan Calculator</h2>
+            <input type="number" id="amt" placeholder="Loan Amount ($)">
+            <input type="number" id="term" placeholder="Term (Months)">
+            <button class="pushable"><span class="shadow"></span><span class="edge"></span><span class="front">Calculate
+                    Payment</span></button>
         </div>
-        <div class="feature-item">
-            <h3>Quick Approval</h3>
-            <p>Most applications approved within 24 hours</p>
-        </div>
-        <div class="feature-item">
-            <h3>Flexible Terms</h3>
-            <p>Choose repayment terms that fit your budget</p>
-        </div>
-        <div class="feature-item">
-            <h3>No Hidden Fees</h3>
-            <p>Transparent pricing with no surprise charges</p>
-        </div>
-        <div class="feature-item">
-            <h3>Online Management</h3>
-            <p>Manage your loan payments through our mobile app</p>
-        </div>
-        <div class="feature-item">
-            <h3>Expert Support</h3>
-            <p>Dedicated loan specialists to guide you through the process</p>
-        </div>
-    </div>
-</div>
+    </section>
 
-<div class="content-section">
-    <div class="requirements-list">
-        <h3>Loan Requirements</h3>
-        <ul>
-            <li>Must be at least 18 years old</li>
-            <li>U.S. citizen or permanent resident</li>
-            <li>Minimum credit score of 620 (may vary by loan type)</li>
-            <li>Verifiable income and employment</li>
-            <li>Valid government-issued ID</li>
-            <li>Active checking account</li>
-        </ul>
-    </div>
-</div>
-
-<div class="content-section">
-    <h2>Apply for a Loan</h2>
-    <p style="text-align: center; margin-bottom: 2rem;">Complete the application below to get started</p>
-    <form id="loanForm">
-        <input type="text" placeholder="Full Name" required>
-        <input type="email" placeholder="Email Address" required>
-        <input type="tel" placeholder="Phone Number" required>
-        <input type="text" placeholder="Social Security Number (XXX-XX-XXXX)" pattern="\d{3}-\d{2}-\d{4}" required>
-        <input type="number" placeholder="Annual Income ($)" min="0" required>
-        <input type="text" placeholder="Employer Name" required>
-        <select required>
-            <option value="">Select Loan Type</option>
-            <option value="personal">Personal Loan</option>
-            <option value="home">Home Loan</option>
-            <option value="auto">Auto Loan</option>
-        </select>
-        <input type="number" placeholder="Requested Loan Amount ($)" min="1000" required>
-        <input type="number" placeholder="Desired Loan Term (Months)" min="12" required>
-        <select required>
-            <option value="">Purpose of Loan</option>
-            <option value="consolidation">Debt Consolidation</option>
-            <option value="home-improvement">Home Improvement</option>
-            <option value="vehicle">Vehicle Purchase</option>
-            <option value="medical">Medical Expenses</option>
-            <option value="other">Other</option>
-        </select>
-        <label style="margin-bottom: 1rem;">
-            <input type="checkbox" required> I agree to the terms and conditions and authorize a credit check
-        </label>
-        <button type="submit" class="btn">Submit Application</button>
-    </form>
-</div>
-</div>
-
-<footer>
-<p>© 2025 LifeSpeed Bank. All rights reserved.</p>
-<div>
-    <a href="#">Terms of Service</a>
-    <a href="#">Privacy Policy</a>
-    <a href="#">Contact Us</a>
-</div>
-</footer>
-
-    <script src="/js/loans.js"></script>
+    <footer>
+        <p>© 2025 LifeSpeed Bank. All rights reserved.</p>
+    </footer>
+    <script src="/public/js/loans.js"></script>
+    <script src="/public/js/dashboard.js"></script>
 </body>
+
 </html>
