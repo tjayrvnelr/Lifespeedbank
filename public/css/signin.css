@@ -290,3 +290,66 @@ footer a {
         flex-direction: column;
     }
 }
+
+/* Tablets (portrait) */
+@media (min-width: 600px) {
+    .nav {
+        flex-direction: row;
+        padding: 1rem 6%;
+    }
+    .form-container {
+        max-width: 520px;
+        padding: 40px;
+    }
+    .nav-links .front {
+        width: auto;
+        padding: 8px 18px;
+    }
+    .btn-group {
+        gap: 12px;
+        flex-direction: row;
+    }
+}
+
+/* Tablets (landscape) */
+@media (min-width: 900px) {
+    .nav {
+        padding: 1rem 7.5%;
+    }
+    .form-container {
+        max-width: 600px;
+        padding: 44px;
+    }
+    .input {
+        font-size: 1.05rem;
+    }
+}
+
+/* Laptops / Desktops */
+@media (min-width: 1200px) {
+    .nav {
+        padding: 1rem 10%;
+    }
+    .form-container {
+        max-width: 700px;
+        padding: 56px;
+        border-radius: 24px;
+    }
+    .front {
+        padding: 14px 20px;
+    }
+}
+
+/* Large screens (4K and up) */
+@media (min-width: 1800px) {
+    .nav {
+        padding: 1.25rem 12%;
+    }
+    .form-container {
+        max-width: 820px;
+        padding: 64px;
+    }
+    .form-container h2 {
+        font-size: 2rem;
+    }
+}
